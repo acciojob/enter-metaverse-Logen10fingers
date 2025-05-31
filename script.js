@@ -1,10 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const enterBtn = document.getElementById("enterBtn");
-  const statusParagraph = document.getElementById("status");
+const statusParagraph = document.getElementById('status');
+const enterButton = document.getElementById('enterBtn');
 
-  enterBtn.addEventListener("click", function() {
-    const newHeading = document.createElement("h1");
-    newHeading.textContent = "Entered Metaverse";
-    statusParagraph.replaceWith(newHeading);
-  });
+
+enterButton.addEventListener('click', () => {
+    statusParagraph.innerHTML = '<h1>Entered Metaverse</h1>';
 });
